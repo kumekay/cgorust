@@ -2,14 +2,14 @@
 #include <cmath>
 void say(int);
 
-
 using namespace std;
 
+const int test {14};
+
 int main() {
-    using namespace std;
     cout << "Hello, World!";
     cout << endl;
-    cout << "test";
+    cout << "test: " << test << endl;
     double l;
     cin >> l;
     cout << "L is: " << sqrt(l) << endl;
@@ -19,5 +19,6 @@ int main() {
 
 void say(int n)
 {
-    std::cout << "Test: " << n << "!";
+    std::cout << "Say: " << n << "!\n";
+    std::cout << "Test from say: " << test << "!\n";
 }
